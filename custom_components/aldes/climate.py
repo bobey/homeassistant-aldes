@@ -65,7 +65,7 @@ class AldesClimateEntity(AldesEntity, ClimateEntity):
         )
         self._enable_turn_on_off_backwards_compatibility = False
         self._attr_target_temperature_step = 1
-        self._attr_hvac_action = "Unknown"
+        self._attr_hvac_action = None
 
     @property
     def device_info(self):
